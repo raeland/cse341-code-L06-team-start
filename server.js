@@ -19,8 +19,6 @@ process.on('uncaughtException', (err,origin) => {
   console.log(process.stderr.fd, `Caught exception: ${err}\n` + `Exception origin: ${origin}`)
 })
 
-
-
 // const createError = require('http-errors')
 // const path = require('path')
 // const { signupValidation, loginValidation } = require('./validation.js');
@@ -48,9 +46,6 @@ process.on('uncaughtException', (err,origin) => {
 //       message: err.message,
 //     });
 // });
-
-
-
 
 mongodb.initDb((err) => {
   if (err) {
