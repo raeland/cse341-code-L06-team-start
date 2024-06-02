@@ -4,7 +4,7 @@ const saveContact = (req, res, next) => {
   const validationRule = {
     firstName: 'required|string',
     lastName: 'required|string',
-    email: 'requred|email',
+    email: 'required|email',
     favoriteColor: 'required|string',
     birthday: 'string'
   }
