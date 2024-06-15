@@ -1,0 +1,29 @@
+{
+    "inventory": {
+        "sku": "any-001",
+        "name": "Milk Powder",
+        "description": "any",
+        "unit": "ounce",
+        "unit_weight": 250,
+        "unit_cost": 121.75,
+        "stock": 3
+    },
+    "inventory2": {
+        "sku": "any-010",
+        "name": "Rice Milk",
+        "description": "Sadly not Horchata",
+        "unit": "ounce",
+        "unit_weight": 1,
+        "unit_cost": 1,
+        "stock": 1
+    },
+    "inventory3": {
+        "sku": "any-101",
+        "name": "Oat Milk",
+        "description": "not real milk",
+        "unit": "ounce",
+        "unit_weight": 1,
+        "unit_cost": 1,
+        "stock": 1
+    }
+  }

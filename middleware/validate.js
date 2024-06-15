@@ -21,14 +21,29 @@ const saveContact = (req, res, next) => {
   })
 }
 
-module.exports = {
-  saveContact
+const saveVendor = (req, res, next) => {
+  const validationRule = {
+      supplier: 'required|string',
+      address: 'required|string',
+      phone: 'required|string',
+      url: ''
+  }
+  validator(req.body, validationRule, {}, (err, status) => {
+    if (!status) {
+      res.status(412).send({
+        success: false,
+        message: 'Validation failed',
+        data: err
+      })
+    } else {
+      next()
+    }
+  })
 }
-
-
-
-
-
+module.exports = {
+  saveContact,
+  saveVendor
+}
 
 // const { body, validationResult } = require('express-validator')
 // const { userValidationRules, validate } = require('./validate.js')
