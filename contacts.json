@@ -1,23 +1,50 @@
+[{
+  "_id": {
+    "$oid": "665693363c3e3b2b184ac011"
+  },
+  "firstName": "Rune",
+  "lastName": "LikeTuna",
+  "email": "runeTheOnly@gmail.com",
+  "favoriteColor": "orange",
+  "birthday": "01-01-50"
+},
 {
-  "contact": {
-    "firstName": "Sarah",
-    "lastName": "Birch",
-    "email": "amazingwoman@test.com",
-    "favoriteColor": "Green",
-    "birthday": "12/12/20"
+  "_id": {
+    "$oid": "665bcf3bbce77b2b79d4a57a"
   },
-  "contact2": {
-    "firstName": "Jimmy",
-    "lastName": "Carter",
-    "email": "jCarter@test.com",
-    "favoriteColor": "Purple",
-    "birthday": "07/12/10"
+  "firstName": "Athena",
+  "lastName": "Burrito",
+  "email": "snuggle@pup.com",
+  "favoriteColor": "black",
+  "birthday": "05-03-19"
+},
+{
+  "_id": {
+    "$oid": "665bd03ebce77b2b79d4a57b"
   },
-  "contact3": {
-    "firstName": "Cassandra",
-    "lastName": "Anderson",
-    "email": "AndersonC@test.com",
-    "favoriteColor": "Yellow",
-    "birthday": "02/22/95"
-  }
-}
+  "firstName": "to",
+  "lastName": "Burrito",
+  "email": "delete@pup.com",
+  "favoriteColor": "turtle",
+  "birthday": "05-03-99"
+},
+{
+  "_id": {
+    "$oid": "666ced7d68e409868282e5f9"
+  },
+  "firstName": "Romi",
+  "lastName": "Louise",
+  "email": "any@romi.sol",
+  "favoriteColor": "Pink",
+  "birthday": "06-03-24"
+},
+{
+  "_id": {
+    "$oid": "666ced8068e409868282e5fa"
+  },
+  "firstName": "Romi",
+  "lastName": "Louise",
+  "email": "any@romi.sol",
+  "favoriteColor": "Pink",
+  "birthday": "06-03-24"
+}]

@@ -35,39 +35,74 @@ content-type: application/json
 DELETE http://localhost:8080/contacts/6220b775099269ff7b31ceab HTTP/1.1
 
 // PRODUCTION Deploy
-### Get all contacts
-GET https://cse341-instructor.herokuapp.com/contacts
+### GET main
+GET http://localhost:8080
 
+### GET all Items
+GET http://localhost:8080/inventory
 
-### Get contact by id
-GET https://cse341-instructor.herokuapp.com/contacts/622023f642f9ab4cd6e060b3
-
-
-### Create contact
-POST https://cse341-instructor.herokuapp.com/contacts HTTP/1.1
-content-type: application/json
+### POST / Create Item
+POST http://localhost:8080/inventory HTTP/1.1
+Content-Type: application/json
 
 {
-    "firstName":"Ashley",
-    "lastName":"Weaver",
-    "email":"aWeaver@test.com",
-    "favoriteColor":"Brown",
-    "birthday":"06/19/2000"
+    "sku": "any-001",
+    "name": "Milk Powder",
+    "description": "any",
+    "unit": "grams",
+    "unit_weight": 250,
+    "unit_cost": 121.75,
+    "stock": 3
 }
 
+### GET single item
+GET http://localhost:8080/inventory/6516c544e607fc26fbcf1998
 
-### PUT contact
-PUT https://cse341-instructor.herokuapp.com/contacts/6220bcb39cd507e920c75a0b HTTP/1.1
-content-type: application/json
+### PUT / Update Item
+PUT http://localhost:8080/inventory/6516c544e607fc26fbcf1998 HTTP/1.1
+Content-Type: application/json
 
 {
-    "firstName":"Sarah",
-    "lastName":"Birch",
-    "email":"sarahB@gmail.com",
-    "favoriteColor":"Yellow",
-    "birthday":"06/12/20"
+    "sku": "put-001",
+    "name": "put",
+    "description": "put",
+    "unit": "kg",
+    "unit_weight": 1,
+    "unit_cost": 1,
+    "stock": 1
 }
 
+### Delete Item
+DELETE http://localhost:8080/inventory/6516b9266142857a3dcfb200
 
-### DELETE contact
-DELETE https://cse341-instructor.herokuapp.com/contacts/6220e34083149913680f9a64 HTTP/1.1
+
+### Get all suppliers
+GET http://localhost:8080/supplier
+
+### Create one supplier
+POST http://localhost:8080/supplier HTTP/1.1
+Content-Type: application/json
+
+{
+    "supplier": "post",
+    "address": "post",
+    "phone": "123-4567",
+    "url": "123.com"
+}
+
+### Get one supplier by id
+GET http://localhost:8080/supplier/6514fef513ad481905b14c33
+
+### update one supplier
+PUT http://localhost:8080/supplier/6516bb3ff527655a357c3e0f HTTP/1.1
+Content-Type: application/json
+
+{
+    "supplier": "put",
+    "address": "put",
+    "phone": "123-4567",
+    "url": "test.com"
+}
+
+### Delete one supplier
+DELETE http://localhost:8080/supplier/6516bb95f527655a357c3e10

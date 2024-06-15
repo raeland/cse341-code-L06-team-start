@@ -1,0 +1,20 @@
+{
+    "supplier": {
+        "supplier": "Aldi",
+        "address": "134 German Way",
+        "phone": "222-123-4567",
+        "url": "aldi-g.com"
+    },
+    "supplier2": {
+        "supplier": "Sams",
+        "address": "526 Marty Drive",
+        "phone": "555-123-4567",
+        "url": "wally.com"
+    },
+    "supplier3": {
+        "supplier": "Direct",
+        "address": "924 Curved Circle",
+        "phone": "114-623-4567",
+        "url": "redirect.com"
+    }
+  }
