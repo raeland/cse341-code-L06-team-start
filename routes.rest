@@ -1,108 +1,75 @@
 // LOCALHOST
-### Get all contacts
-GET http://localhost:8080/contacts
 
-
-### Get contact by id
-GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b3
-
-
-### Create contact
-POST http://localhost:8080/contacts HTTP/1.1
-content-type: application/json
-
-{
-    "firstName":"Ashley",
-    "lastName":"Weaver",
-    "email":"aWeaver@test.com",
-    "favoriteColor":"Brown",
-    "birthday":"06/19/2000"
-}
-
-
-### PUT contact
-PUT http://localhost:8080/contacts/6220bcb39cd507e920c75a0b HTTP/1.1
-content-type: application/json
-
-{
-    "firstName":"Sarah",
-    "lastName":"Birch",
-    "email":"test@gmail.com",
-    "favoriteColor":"Green",
-    "birthday":"12/12/20"
-}
-### DELETE contact
-DELETE http://localhost:8080/contacts/6220b775099269ff7b31ceab HTTP/1.1
-
-// PRODUCTION Deploy
 ### GET main
 GET http://localhost:8080
 
 ### GET all Items
-GET http://localhost:8080/inventory
+GET http://localhost:8080/supplies
 
 ### POST / Create Item
-POST http://localhost:8080/inventory HTTP/1.1
+POST http://localhost:8080/supplies HTTP/1.1
 Content-Type: application/json
 
 {
     "sku": "any-001",
     "name": "Milk Powder",
     "description": "any",
-    "unit": "grams",
+    "unit": "ounces",
     "unit_weight": 250,
     "unit_cost": 121.75,
     "stock": 3
 }
 
 ### GET single item
-GET http://localhost:8080/inventory/6516c544e607fc26fbcf1998
+GET http://localhost:8080/supplies/6516c544e607fc26fbcf1998
 
 ### PUT / Update Item
-PUT http://localhost:8080/inventory/6516c544e607fc26fbcf1998 HTTP/1.1
+PUT http://localhost:8080/supplies/6516c544e607fc26fbcf1998 HTTP/1.1
 Content-Type: application/json
 
 {
     "sku": "put-001",
     "name": "put",
     "description": "put",
-    "unit": "kg",
+    "unit": "lbs",
     "unit_weight": 1,
     "unit_cost": 1,
     "stock": 1
 }
 
 ### Delete Item
-DELETE http://localhost:8080/inventory/6516b9266142857a3dcfb200
+DELETE http://localhost:8080/supplies/6516b9266142857a3dcfb200
 
+### GET all Items
+GET http://localhost:8080/inventory
 
-### Get all suppliers
-GET http://localhost:8080/supplier
+### Get all vendors
+GET http://localhost:8080/vendor
 
-### Create one supplier
-POST http://localhost:8080/supplier HTTP/1.1
+### Create one vendor
+POST http://localhost:8080/vendor HTTP/1.1
 Content-Type: application/json
 
 {
-    "supplier": "post",
+    "vendor": "post",
     "address": "post",
     "phone": "123-4567",
     "url": "123.com"
 }
 
-### Get one supplier by id
-GET http://localhost:8080/supplier/6514fef513ad481905b14c33
+### Get one vendor by id
+GET http://localhost:8080/vendor/6514fef513ad481905b14c33
 
-### update one supplier
-PUT http://localhost:8080/supplier/6516bb3ff527655a357c3e0f HTTP/1.1
+### update one vendor
+PUT http://localhost:8080/vendor/6516bb3ff527655a357c3e0f HTTP/1.1
 Content-Type: application/json
 
 {
-    "supplier": "put",
+    "vendor": "put",
     "address": "put",
     "phone": "123-4567",
     "url": "test.com"
 }
 
-### Delete one supplier
-DELETE http://localhost:8080/supplier/6516bb95f527655a357c3e10
+### Delete one vendor
+DELETE http://localhost:8080/vendor/6516bb95f527655a357c3e10

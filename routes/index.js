@@ -1,7 +1,10 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 
-router.use('/', require('./swagger'));
-router.use('/contacts', require('./contacts'));
+router
+    .use('/', require('./swagger'))
+    .use('/contacts', require('./contacts'))
+    //.use('/vendor', require('./vendor'))
+    //.use('/supplies', require('./supplies'))
 
-module.exports = router;
+module.exports = router
