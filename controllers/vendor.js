@@ -9,7 +9,7 @@ const getAllVendors = async (req, res) => {
             res.status(200).json(vendors)
         })          
     } catch (error) {
-        res.status(500).json(`An error occured: ${error}`);  
+        res.status(500).json(`An error occured: ${error}`)
     }
 }
 
