@@ -21,14 +21,14 @@
     "express": "^4.19.2",
     "express-validator": "^7.1.0",
     "mongodb": "^4.4.0",
-    "swagger-ui-express": "^4.3.0",
+    "swagger-ui-express": "^4.6.3",
     "validatorjs": "^3.22.1"
   },
   "devDependencies": {
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "nodemon": "^3.1.1",
+    "nodemon": "^3.1.4",
     "prettier": "^2.5.1",
     "swagger-autogen": "^2.23.7"
   },
